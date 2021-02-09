@@ -1,3 +1,5 @@
+/* ===== Reset ===== */
+
 * {
   border: none;
   box-sizing: border-box;
@@ -21,6 +23,8 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+/* ===== Base ===== */
+
 .container {
   margin: 0 auto;
   max-width: 60rem;
@@ -31,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
   align-items: center;
   display: flex;
-  padding: 2rem 0;
+  padding: 2.5rem 0 ;
 }
 
 .header__logo {
@@ -51,6 +55,23 @@ p, h1, h2, h3, h4, h5, h6 {
 .menu__item:hover {
   color: #777;
 }
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.footer {
+  background-color: #eee;
+  color: #777;
+  font-size: .875rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* ===== Home ===== */
 
 .hero {
   align-items: center;
@@ -76,7 +97,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__text {
-  font-size: 1.125rem;
+  margin-bottom: 0;
 }
 
 .hero__div:last-of-type {
@@ -94,7 +115,9 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-.highlights__grid {
+/* ===== Recipes ===== */
+
+.recipes__grid {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -120,10 +143,16 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: .875rem;
 }
 
-.footer {
-  background-color: #eee;
-  color: #777;
-  font-size: .875rem;
-  padding: 1.5rem;
-  text-align: center;
+
+/* ===== About ===== */
+.about__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about__subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
