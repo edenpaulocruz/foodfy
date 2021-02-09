@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 .container {
   margin: 0 auto;
   max-width: 60rem;
@@ -26,7 +31,7 @@ a {
 .header {
   align-items: center;
   display: flex;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .header__logo {
@@ -50,8 +55,9 @@ a {
 .hero {
   align-items: center;
   background-color: #fbdfdb;
-  border-radius: 2rem;
+  border-radius: 1rem;
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .hero__div {
@@ -65,10 +71,59 @@ a {
 
 .hero__title {
   font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.hero__text {
+  font-size: 1.125rem;
 }
 
 .hero__div:last-of-type {
   text-align: right;
   padding: 5rem 6rem 0 0;
+}
+
+.highlights {
+  margin-bottom: 3rem;
+}
+
+.highlights__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlights__grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card__image {
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.125rem;
+  margin-bottom: .25rem;
+}
+
+.card__text {
+  color: #777;
+  font-size: .875rem;
+}
+
+.footer {
+  background-color: #eee;
+  color: #777;
+  font-size: .875rem;
+  padding: 1.5rem;
+  text-align: center;
 }
