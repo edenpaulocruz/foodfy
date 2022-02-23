@@ -1,0 +1,65 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+<title>Foodfy - Página Incial</title>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="hero__div">
+    <h1 class="hero__title">As melhores receitas</h1>
+    <p class="text hero__text">Aprenda a construir os melhores pratos <br> com receitas criadas por profissionais <br> do mundo inteiro.
+    </p>
+  </div>
+  <div class="hero__div">
+    <img class="hero__image" src="./assets/chef.png" alt="Chef conduzindo prato quente">
+  </div>
+</section>
+
+<section class="highlights">
+  <h2 class="highlights__title">Mais acessadas</h2>
+  <div class="recipes__grid">
+    <div class="card">
+      <img src="./assets/burger.png" alt="Sanduíche com três carnes, bacon, anéis de cebola e alface, servido na tábua acompanhado por batatas fritas" class="card__image">
+      <h3 class="card__title">Triplo bacon burger</h3>
+      <p class="card__text">por Jorge Relato</p>
+    </div>
+    <div class="card">
+      <img src="./assets/pizza.png" alt="Pizza média fatiada em 4, acompanhada de garrada de refrigerante Coca-cola" class="card__image">
+      <h3 class="card__title">Pizza 4 estações</h3>
+      <p class="card__text">por Fabiana Melo</p>
+    </div>
+    <div class="card">
+      <img src="./assets/espaguete.png" alt="Espaguete servido num prato branco, com  molho e ervas por cima" class="card__image">
+      <h3 class="card__title">Espaguete ao alho</h3>
+      <p class="card__text">por Júlia Kinoto</p>
+    </div>
+    <div class="card">
+      <img src="./assets/lasanha.png" alt="Lasanha servida numa travessa quadrada" class="card__image">
+      <h3 class="card__title">Lasanha mac n'chesse</h3>
+      <p class="card__text">por Juliano Vieira</p>
+    </div>
+    <div class="card">
+      <img src="./assets/doce.png" alt="Caixa quadrada com 27 doces" class="card__image">
+      <h3 class="card__title">Docinhos pão-do-céu</h3>
+      <p class="card__text">por Ricardo Golvea</p>
+    </div>
+    <div class="card">
+      <img src="./assets/asinhas.png" alt="Asinhas servidas em prato de madeira acompanhadas de salada fresca e molho" class="card__image">
+      <h3 class="card__title">Asinhas de frango ao barbecue</h3>
+      <p class="card__text">Vania Steroski</p>
+    </div>
+  </div>
+</section>
+
+<div class="modal">
+  <div class="modal__container">
+    <img src="" alt="" class="modal__container__image">
+    <h2 class="modal__container__title"></h2>
+    <p class="modal__container__text"></p>
+    <a class="modal__container__close-button">Fechar</a>
+  </div>
+</div>
+
+{% endblock %}

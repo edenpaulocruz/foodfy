@@ -18,4 +18,4 @@ for (let card of cards) {
 document.querySelector(".modal__container__close-button").
 addEventListener("click", function() {
   modal.classList.remove("modal--active");
-  })
+})
