@@ -1,7 +1,12 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const recipes = require('./data')
 
 const server = express()
+
+const recipesIndex = recipes.filter(function(recipe, index) {
+  if (index < 6) return recipe 
+})
 
 server.set('view engine', 'njk')
 server.use(express.static('public'))
@@ -15,7 +20,7 @@ server.listen(5000, function() {
 })
 
 server.get('/', function(req, res) {
-  return res.render('index')
+  return res.render('index', {recipes: recipesIndex})
 })
 
 server.get('/about', function(req, res) {
@@ -23,5 +28,5 @@ server.get('/about', function(req, res) {
 })
 
 server.get('/recipes', function(req, res) {
-  return res.render('recipes')
+  return res.render('recipes', {recipes: recipes})
 })
