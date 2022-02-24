@@ -124,6 +124,10 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.card {
+  cursor: pointer;
+}
+
 .card__image {
   border-radius: .5rem;
   margin-bottom: .75rem;
