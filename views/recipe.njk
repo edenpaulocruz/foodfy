@@ -6,26 +6,34 @@
 
 {% block content %}
 
-  <section>
-    <img src="{{recipe.image}}" alt="{{recipe.title}}">
-    <h1>{{recipe.title}}</h1>
-    <p>por {{recipe.author}}</p>
-    <h2>Ingredientes</h2>
-    <ul>
-      {% for ingredient in recipe.ingredients %}
-        <li>{{ingredient}}</li>
-      {% endfor %}
-    </ul>
-    <h2>Modo de Preparo</h2>
-    <ol>
-      {% for step in recipe.preparation %}
-        <li>{{step}}
-      {% endfor %}
-    </ol>
+  <article>
+    <img src="{{recipe.image}}" alt="{{recipe.title}}" class="recipe__hero">
+    <section class="recipe__header">
+      <h1 class="recipe__title">{{recipe.title}}</h1>
+      <p class="recipe__author">por {{recipe.author}}</p>
+    </section>
+    <section class="recipe__section">
+      <h2 class="recipe__subtitle">Ingredientes</h2>
+      <ul>
+        {% for ingredient in recipe.ingredients %}
+          <li class="recipe__list--item">{{ingredient}}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="recipe__section">
+      <h2 class="recipe__subtitle">Modo de Preparo</h2>
+      <ol>
+        {% for step in recipe.preparation %}
+          <li class="recipe__list--item">{{step}}
+        {% endfor %}
+      </ol>
+    </section>
     {% if recipe.information %}
-      <h2>Informação</h2>
-      <p>{{recipe.information}}</p>
+      <section class="recipe__section">
+        <h2 class="recipe__subtitle">Informação</h2>
+        <p class="recipe__text">{{recipe.information}}</p>
+      </section>
     {% endif %}
-  </section>
+  </article>
 
 {% endblock %}

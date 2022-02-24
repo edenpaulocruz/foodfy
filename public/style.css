@@ -27,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 58.75rem;
   padding: 0 1rem;
   width: 100%;
 }
@@ -130,7 +130,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .card__image {
   border-radius: .5rem;
+  height: 8.75rem;
   margin-bottom: .75rem;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -155,4 +157,55 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+/* ===== Recipe ===== */
+.recipe__hero {
+  border-radius: .9375rem;
+  display: block;
+  width: 100%;
+}
+
+.recipe__header {
+  padding: 3.125rem 0;
+  text-align: center;
+}
+
+.recipe__title {
+  color: #111;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+.recipe__author {
+  color: #777;
+  font-size: 1.5rem;
+}
+
+.recipe__section {
+  margin-bottom: 2.4375rem;
+}
+
+.recipe__subtitle {
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.recipe__list--item {
+  color: #444;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.recipe__text {
+  color: #444;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
