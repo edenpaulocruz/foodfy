@@ -5,13 +5,5 @@
 {% endblock %}
 
 {% block content %}
-  <div class="recipes__grid">
-    {% for recipe in recipes %}
-      <div class="card">
-        <img src="{{recipe.image}}" alt="{{recipe.title}}" class="card__image">
-        <h3 class="card__title">{{recipe.title}}</h3>
-        <p class="card__text">por {{recipe.author}}</p>
-      </div>
-    {% endfor %}
-  </div>
+  {% include "recipes-grid.njk" %}
 {% endblock %}
