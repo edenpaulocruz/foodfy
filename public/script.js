@@ -7,18 +7,13 @@ for (let card of cards) {
   })
 }
 
-const toggles = document.querySelectorAll('.toggle')
+const toggleButtons = document.querySelectorAll('.toggle-button')
 
-for (let toggle of toggles) {
-  toggle.addEventListener('click', function() {
-    const toggleSection = ((toggle.parentElement).parentElement)
+for (let toggleButton of toggleButtons) {
+  toggleButton.addEventListener('click', function() {
+    const toggleSection = ((toggleButton.parentElement).parentElement)
     const toggledContent = toggleSection.querySelector('.toggled-content')
-    if (toggledContent.style.display === '') {
-      toggledContent.style.display = 'none'
-      toggle.innerHTML = 'Mostrar'
-    } else {
-      toggledContent.style.display = ''
-      toggle.innerHTML = 'Esconder'
-    }
+    toggledContent.classList.toggle('hidden')
+    toggleButton.innerHTML = toggledContent.classList.contains('hidden') ? 'Mostrar' : 'Esconder'
   })
 }

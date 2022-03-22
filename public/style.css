@@ -214,7 +214,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.75rem;
 }
 
-.toggle {
+.toggle-button {
   color: #777;
   cursor: pointer;
   font-size: .75rem;
@@ -222,6 +222,6 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.toggled-content {
-  display: block;
+.hidden {
+  display: none;
 }
