@@ -13,7 +13,7 @@
       <p class="recipe__author">por {{recipe.author}}</p>
     </section>
     <section class="recipe__section">
-      <h2 class="recipe__subtitle">Ingredientes<span class="toggle">Esconder</span></h2>
+      <h2 class="recipe__subtitle">Ingredientes<span class="toggle-button">Esconder</span></h2>
       <ul class="toggled-content">
         {% for ingredient in recipe.ingredients %}
           <li class="recipe__list--item">{{ingredient}}</li>
@@ -21,7 +21,7 @@
       </ul>
     </section>
     <section class="recipe__section">
-      <h2 class="recipe__subtitle">Modo de Preparo<span class="toggle">Esconder</span></h2>
+      <h2 class="recipe__subtitle">Modo de Preparo<span class="toggle-button">Esconder</span></h2>
       <ol class="toggled-content">
         {% for step in recipe.preparation %}
           <li class="recipe__list--item">{{step}}
@@ -30,7 +30,7 @@
     </section>
     {% if recipe.information %}
       <section class="recipe__section">
-        <h2 class="recipe__subtitle">Informações Adicionais<span class="toggle">Esconder</span></h2>
+        <h2 class="recipe__subtitle">Informações Adicionais<span class="toggle-button">Esconder</span></h2>
         <p  class="recipe__text toggled-content">{{recipe.information}}</p>
       </section>
     {% endif %}
